@@ -1,11 +1,12 @@
 package codedream.mq.listener;
 
-import codedream.mq.channel.Input1;
+import codedream.mq.send.Input1;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.cloud.stream.messaging.Sink;
+import org.springframework.cloud.stream.messaging.Source;
 
 /**
  * @author alice

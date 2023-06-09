@@ -12,8 +12,8 @@ import org.springframework.test.context.junit4.SpringRunner;
  * @time 2023-06-07 11:28
  **/
 @RunWith(SpringRunner.class)
-@EnableBinding(value = {SinkApplicationTests.SinkSender.class})
-public class SinkApplicationTests {
+@EnableBinding(value = {SinkBApplicationTests.SinkSender.class})
+public class SinkBApplicationTests {
 
     @Autowired
     private SinkSender sinkSender;
@@ -26,7 +26,7 @@ public class SinkApplicationTests {
 
     public interface SinkSender {
 
-        String OUTPUT = "input"; //若不配置 application.properties 文件，消息管道是 input
+        String OUTPUT = "input";
         String OUTPUT2 = "raw-sensor-data";
 
         /**
